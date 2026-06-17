@@ -104,14 +104,14 @@ export const DATA = {
     },
   ],
   education: [
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "https://www.google.com/s2/favicons?domain=ibo.org&sz=128",
-      start: "2014",
-      end: "2018",
-    },
+    // {
+    //   school: "International Baccalaureate",
+    //   href: "https://ibo.org",
+    //   degree: "IB Diploma",
+    //   logoUrl: "https://www.google.com/s2/favicons?domain=ibo.org&sz=128",
+    //   start: "2014",
+    //   end: "2018",
+    // },
   ],
   projects: [
   //   {
