@@ -2,7 +2,7 @@ import { Icons } from "@/components/icons";
 import { House, Library } from "lucide-react";
 import { Windows } from "@/components/ui/svgs/windows";
 import { Python } from "@/components/ui/svgs/python";
-import { UBNT } from "@/components/ui/svgs/UBNT";
+import { UBNT } from "@/components/ui/svgs/ubnt";
 import { PVE } from "@/components/ui/svgs/pve";
 import { Linux } from "@/components/ui/svgs/linux";
 import { Luau } from "@/components/ui/svgs/luau";
