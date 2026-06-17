@@ -3,9 +3,8 @@ export const CONFIG = {
   // Site Settings
   // ---------------------------------------------------------------------------
   site: {
-    url: "https://alexmercer.dev",
+    url: "https://aphrodite.tail18d595.ts.net/",
     locale: "en_US",
-    twitterHandle: "@alexmercer_dev",
   },
 
   // ---------------------------------------------------------------------------

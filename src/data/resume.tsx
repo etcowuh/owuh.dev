@@ -1,219 +1,109 @@
 import { Icons } from "@/components/icons";
 import { House, Library } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Windows } from "@/components/ui/svgs/windows";
 import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Astro } from "@/components/ui/svgs/astro";
+import { UBNT } from "@/components/ui/svgs/UBNT";
+import { PVE } from "@/components/ui/svgs/pve";
+import { Linux } from "@/components/ui/svgs/linux";
+import { Luau } from "@/components/ui/svgs/luau";
 
 export const DATA = {
-  name: "Alex Mercer - Software Engineer",
-  initials: "AM",
-  url: "https://alexmercer.dev",
-  location: "Austin, TX",
+  name: "Nikki",
+  initials: "NK",
+  url: "https://owuh.dev",
+  location: "Ontario, Canada",
   locationLink: "https://www.google.com/maps/place/austin+tx",
   description:
-    "Full-stack engineer turned indie founder. I love building developer tools, fast UIs, and products people actually use.",
+    "I live at the intersection of infrastructure and creativity.",
   summary:
-    "In early 2023, I left a senior engineering role to go all-in on building my own SaaS products. Before that, [I completed a double degree in computer science and business](/#education), [interned at companies like Stripe and Cloudflare](/#work), and [competed in 18+ hackathons](/#hackathons). I also spent a summer in San Francisco as part of a founder residency focused on shipping fast and finding early customers.",
-  avatarUrl: "/picofme.png",
-  ogImage: "/og_image.png",
+    "What started as a hobby became something I couldn't put down. I've worked camera, operated replay and video switching at large-scale live events, and help run [FOSS.wiki](https://foss.wiki) — a FOSS-focused wiki originally founded under the now-defunct 501(c)(3) All Things Linux. Along the way, I've built out my own homelab, shipped Roblox experiences, and gone deep on Linux and self-hosted infrastructure.",
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
     work: { order: 2, enabled: true, heading: "Work Experience", presentLabel: "Present" },
     education: { order: 3, enabled: true, heading: "Education" },
     skills: { order: 4, enabled: true, heading: "Skills" },
-    projects: {
-      order: 5, enabled: true,
-      label: "My Projects",
-      heading: "Check out my latest work",
-      text: "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
-    },
-    hackathons: {
-      order: 7, enabled: true,
-      label: "Hackathons",
-      heading: "I like building things",
-      text: "During my time in university, I attended {count}+ hackathons. People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
-    },
-    photos: {
-      order: 6, enabled: true,
-      heading: "My Recent Travels",
-    },
+    // projects: {
+    //   order: 5, enabled: true,
+    //   label: "My Projects",
+    //   heading: "Check out my latest work",
+    //   text: "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
+    // },
     contact: {
       order: 8, enabled: true,
       label: "Contact",
       heading: "Get in Touch",
-      text: "Want to chat? Just shoot me a dm with a direct question on twitter and I'll respond whenever I can. I will ignore all soliciting.",
+      text: "Want to chat? Just shoot me an email with a direct question and I'll respond whenever I can. I will ignore all soliciting.",
     },
   },
-  photos: [
-    { src: "/photos/photo1.jpg", alt: "Photo 1" },
-    { src: "/photos/photo2.jpg", alt: "Photo 2" },
-    { src: "/photos/photo3.jpg", alt: "Photo 3" },
-    { src: "/photos/photo4.jpg", alt: "Photo 4" },
-    { src: "/photos/photo5.jpg", alt: "Photo 5" },
-    { src: "/photos/photo6.jpg", alt: "Photo 6" },
-    { src: "/photos/photo7.jpg", alt: "Photo 7" },
-    { src: "/photos/photo8.jpg", alt: "Photo 8" },
-    { src: "/photos/photo9.jpg", alt: "Photo 9" },
-  ],
   skills: [
-    { name: "Astro", icon: Astro },
-    { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
+    { name: "Luau", icon: Luau },
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
+    { name: "Ubiquiti", icon: UBNT },
+    { name: "Proxmox", icon: PVE },
+    { name: "Linux", icon: Linux },
+    { name: "Windows", icon: Windows },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },
     { href: "/blog", icon: Library, label: "Blog" },
   ],
   contact: {
-    email: "alex@alexmercer.dev",
-    tel: "+1 512 000 0000",
+    email: "me@owuh.dev",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com",
+        url: "https://github.com/etcowuh",
         icon: Icons.github,
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://linkedin.com",
-        icon: Icons.linkedin,
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com",
-        icon: Icons.x,
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://youtube.com",
-        icon: Icons.youtube,
-        navbar: true,
-      },
-      email: {
+      Email: {
         name: "Send Email",
-        url: "mailto:alex@alexmercer.dev",
+        url: "mailto:me@owuh.dev",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
+      Discord: {
+        name: "Discord",
+        url: "https://discord.com/users/838063348217937992",
+        icon: Icons.discord,
+        navbar: true,
+      }
     },
   },
 
   work: [
     {
-      company: "Meridian Labs",
-      href: "https://meridian.so",
-      badges: ["Founder"],
-      location: "Austin, TX",
-      title: "Co-founder & Engineer",
-      logoUrl: "https://avatar.vercel.sh/meridian-labs?size=40",
-      start: "January 2023",
+      company: "FOSS.wiki (formerly ATL.wiki)",
+      href: "https://foss.wiki",
+      location: undefined,
+      logoUrl: "https://www.google.com/s2/favicons?domain=foss.wiki&sz=128",
+      start: "Aug 2025",
       end: undefined,
       description:
-        "Building a suite of developer productivity tools focused on local-first architecture and offline sync. Grew to 1,200 paying customers within the first year. Responsible for the full stack - product, engineering, and growth.",
+        "Community-driven, Linux-focused wiki originally founded under the 501(c)(3) non-profit All Things Linux.",
     },
     {
-      company: "Stripe",
-      href: "https://stripe.com",
+      company: "Innovation Two Productions",
+      href: "https://innovationtwo.com",
       badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer Intern",
-      logoUrl: "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
-      start: "May 2022",
-      end: "August 2022",
+      logoUrl: "/i2p.svg",
+      start: "Aug 2024",
+      end: undefined,
       description:
         "Worked on the Payments Infrastructure team. Built an internal load-testing framework in Go that reduced regression testing time by 60%. Contributed to the migration of legacy billing logic to a new event-driven architecture using Kafka.",
     },
     {
-      company: "Cloudflare",
-      href: "https://cloudflare.com",
+      company: "Spectacle Studios",
+      href: "https://spst.dev",
       badges: [],
-      location: "Remote",
-      title: "Software Engineer Intern",
-      logoUrl: "https://www.google.com/s2/favicons?domain=cloudflare.com&sz=128",
-      start: "September 2021",
-      end: "December 2021",
+      logoUrl: "https://www.google.com/s2/favicons?domain=spst.dev&sz=128",
+      start: "May 2022",
+      end: undefined,
       description:
-        "Joined the Workers team during a co-op term. Implemented a new dashboard UI for monitoring Worker invocation metrics using React and D3. Added support for custom error boundaries in the Workers runtime sandbox.",
-    },
-    {
-      company: "Datadog",
-      href: "https://datadoghq.com",
-      badges: [],
-      location: "New York, NY",
-      title: "Software Engineer Intern",
-      logoUrl: "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Built new alert correlation features in the Incidents product using Python and React. Improved p99 query latency on the metrics explorer by 40% through query plan optimizations in PostgreSQL.",
-    },
-    {
-      company: "Benchling",
-      href: "https://benchling.com",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer Intern",
-      logoUrl: "https://www.google.com/s2/favicons?domain=benchling.com&sz=128",
-      start: "May 2020",
-      end: "August 2020",
-      description:
-        "Worked on the scientific data platform team. Implemented a bulk import pipeline for lab instrument data using TypeScript and AWS Lambda, reducing manual data entry time for research teams by over 80%.",
-    },
-    {
-      company: "Relay Labs",
-      href: "https://relay.app",
-      badges: [],
-      location: "Vancouver, BC",
-      title: "Software Engineer Intern",
-      logoUrl: "https://www.google.com/s2/favicons?domain=relay.app&sz=128",
-      start: "September 2019",
-      end: "December 2019",
-      description:
-        "Early-stage startup building workflow automation tools. Shipped core integrations with Slack, Notion, and GitHub. Designed the initial webhook delivery system in Node.js that handled over 500k events per day at peak.",
+        "Worked on the Payments Infrastructure team. Built an internal load-testing framework in Go that reduced regression testing time by 60%. Contributed to the migration of legacy billing logic to a new event-driven architecture using Kafka.",
     },
   ],
   education: [
-    {
-      school: "Founder Fellowship SF",
-      href: "https://foundersfellowship.io",
-      degree: "Cohort 4 - Founder in Residence",
-      logoUrl: "https://avatar.vercel.sh/founder-fellowship?size=40",
-      start: "2023",
-      end: "2023",
-    },
-    {
-      school: "University of British Columbia",
-      href: "https://ubc.ca",
-      degree: "Bachelor of Science, Computer Science",
-      logoUrl: "https://www.google.com/s2/favicons?domain=ubc.ca&sz=128",
-      start: "2018",
-      end: "2023",
-    },
-    {
-      school: "Simon Fraser University",
-      href: "https://sfu.ca",
-      degree: "Bachelor of Business Administration",
-      logoUrl: "https://www.google.com/s2/favicons?domain=sfu.ca&sz=128",
-      start: "2018",
-      end: "2023",
-    },
     {
       school: "International Baccalaureate",
       href: "https://ibo.org",
@@ -224,117 +114,117 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "Stackwise",
-      href: "https://stackwise.dev",
-      dates: "March 2024 - Present",
-      active: true,
-      description:
-        "Built an AI-powered code review tool that integrates with GitHub PRs and provides context-aware feedback based on your team's codebase conventions. Used by 300+ engineering teams.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "OpenAI API",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://stackwise.dev",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/example-website.webp",
-      video: "",
-    },
-    {
-      title: "Logport",
-      href: "https://logport.io",
-      dates: "October 2023 - February 2024",
-      active: true,
-      description:
-        "Open-source structured logging dashboard for Node.js and Python services. Ingest logs via a lightweight SDK, query them with a SQL-like syntax, and set up alerts in minutes.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "ClickHouse",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://logport.io",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/alexmercer-dev/logport",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "Formbase",
-      href: "https://formbase.dev",
-      dates: "June 2023 - September 2023",
-      active: true,
-      description:
-        "A headless form backend that handles submissions, spam filtering, file uploads, and email notifications - no server required. Drop in one script tag and you're done.",
-      technologies: [
-        "Astro",
-        "TypeScript",
-        "Cloudflare Workers",
-        "TailwindCSS",
-        "Stripe",
-        "Resend",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://formbase.dev",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/alexmercer-dev/formbase",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/example-website.png",
-      video: "",
-    },
-    {
-      title: "Patchwork",
-      href: "https://patchwork.run",
-      dates: "February 2023 - May 2023",
-      active: false,
-      description:
-        "A visual diff tool for design tokens and Tailwind config changes. Connect it to your repo and get a live preview of how a config change affects every component in your design system.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Vercel",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://patchwork.run",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
+  //   {
+  //     title: "Stackwise",
+  //     href: "https://stackwise.dev",
+  //     dates: "March 2024 - Present",
+  //     active: true,
+  //     description:
+  //       "Built an AI-powered code review tool that integrates with GitHub PRs and provides context-aware feedback based on your team's codebase conventions. Used by 300+ engineering teams.",
+  //     technologies: [
+  //       "Next.js",
+  //       "TypeScript",
+  //       "PostgreSQL",
+  //       "Prisma",
+  //       "TailwindCSS",
+  //       "Stripe",
+  //       "Shadcn UI",
+  //       "OpenAI API",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://stackwise.dev",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //     ],
+  //     image: "/example-website.webp",
+  //     video: "",
+  //   },
+  //   {
+  //     title: "Logport",
+  //     href: "https://logport.io",
+  //     dates: "October 2023 - February 2024",
+  //     active: true,
+  //     description:
+  //       "Open-source structured logging dashboard for Node.js and Python services. Ingest logs via a lightweight SDK, query them with a SQL-like syntax, and set up alerts in minutes.",
+  //     technologies: [
+  //       "Next.js",
+  //       "TypeScript",
+  //       "ClickHouse",
+  //       "TailwindCSS",
+  //       "Shadcn UI",
+  //       "Cloudflare Workers",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://logport.io",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //       {
+  //         type: "Source",
+  //         href: "https://github.com/alexmercer-dev/logport",
+  //         icon: <Icons.github className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video: "https://cdn.magicui.design/bento-grid.mp4",
+  //   },
+  //   {
+  //     title: "Formbase",
+  //     href: "https://formbase.dev",
+  //     dates: "June 2023 - September 2023",
+  //     active: true,
+  //     description:
+  //       "A headless form backend that handles submissions, spam filtering, file uploads, and email notifications - no server required. Drop in one script tag and you're done.",
+  //     technologies: [
+  //       "Astro",
+  //       "TypeScript",
+  //       "Cloudflare Workers",
+  //       "TailwindCSS",
+  //       "Stripe",
+  //       "Resend",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://formbase.dev",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //       {
+  //         type: "Source",
+  //         href: "https://github.com/alexmercer-dev/formbase",
+  //         icon: <Icons.github className="size-3" />,
+  //       },
+  //     ],
+  //     image: "/example-website.png",
+  //     video: "",
+  //   },
+  //   {
+  //     title: "Patchwork",
+  //     href: "https://patchwork.run",
+  //     dates: "February 2023 - May 2023",
+  //     active: false,
+  //     description:
+  //       "A visual diff tool for design tokens and Tailwind config changes. Connect it to your repo and get a live preview of how a config change affects every component in your design system.",
+  //     technologies: [
+  //       "Next.js",
+  //       "TypeScript",
+  //       "TailwindCSS",
+  //       "Shadcn UI",
+  //       "Vercel",
+  //     ],
+  //     links: [
+  //       {
+  //         type: "Website",
+  //         href: "https://patchwork.run",
+  //         icon: <Icons.globe className="size-3" />,
+  //       },
+  //     ],
+  //     image: "",
+  //     video: "https://cdn.llm.report/openai-demo.mp4",
+  //   },
   ],
   hackathons: [
     {
